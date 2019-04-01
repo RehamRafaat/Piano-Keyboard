@@ -1,0 +1,419 @@
+<DOCTYPE html>
+    <html>
+    <head>
+        <title>Piano</title>
+        <link rel="icon" href="transparent-key-piano-6.png">
+        <link rel="shortcut icon" href="mini.png">
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+    </head>
+    <style>
+       body{
+            background-image: url(Curtain-Img.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .piano{
+            width: 900px;
+            height: 500px;
+            margin-left: 235px;
+            margin-top: 127px;
+            background-image: url(best-keyboard-piano-1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .key{
+             margin-top: 235px;
+             width: 15px;
+             height: 128px;
+             border: solid;
+             position: absolute;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-12 col-xs-12"></div>
+                <div class="piano col-md-6 col-sm-12 col-xs-12">
+                    <div id="key1" class="key" onmousedown="mouseDown1()" onmouseup="mouseUp1()" style="margin-left: -1px; width: 17px;"></div>
+                    <div id="key2" class="key" onmousedown="mouseDown2()" onmouseup="mouseUp2()" style="margin-left: 20px; width: 15px;"></div>
+                    <div id="key3" class="key" onmousedown="mouseDown3()" onmouseup="mouseUp3()" style="margin-left: 40px; width: 17px;"></div>
+                    <div id="key4" class="key" onmousedown="mouseDown4()" onmouseup="mouseUp4()" style="margin-left: 60px; width: 20px;"></div>
+                    <div id="key5" class="key" onmousedown="mouseDown5()" onmouseup="mouseUp5()" style="margin-left: 85px; width: 17px;"></div>
+                    <div id="key6" class="key" onmousedown="mouseDown6()" onmouseup="mouseUp6()" style="margin-left: 105px; width: 17px;"></div>
+                    <div id="key7" class="key" onmousedown="mouseDown7()" onmouseup="mouseUp7()" style="margin-left: 128px; width: 17px;"></div>
+                    <div id="key8" class="key" onmousedown="mouseDown8()" onmouseup="mouseUp8()" style="margin-left: 148px; width: 17px;"></div>
+                    <div id="key9" class="key" onmousedown="mouseDown9()" onmouseup="mouseUp9()" style="margin-left: 168px; width: 20px;"></div>
+                    <div id="key10" class="key" onmousedown="mouseDown10()" onmouseup="mouseUp10()" style="margin-left: 190px; width: 20px;"></div>
+                    <div id="key11" class="key" onmousedown="mouseDown11()" onmouseup="mouseUp11()" style="margin-left: 215px; width: 17px;"></div>
+                    <div id="key12"class="key" onmousedown="mouseDown12()" onmouseup="mouseUp12()" style="margin-left: 235px; width: 20px;"></div>
+                    <div id="key13"class="key" onmousedown="mouseDown13()" onmouseup="mouseUp13()" style="margin-left: 260px; width: 17px;"></div>
+                    <div id="key14"class="key" onmousedown="mouseDown14()" onmouseup="mouseUp14()" style="margin-left: 280px; width: 17px;"></div>
+                    <div id="key15"class="key" onmousedown="mouseDown15()" onmouseup="mouseUp15()" style="margin-left: 300px; width: 20px;"></div>
+                    <div id="key16"class="key" onmousedown="mouseDown16()" onmouseup="mouseUp16()" style="margin-left: 325px; width: 17px;"></div>
+                    <div id="key17"class="key" onmousedown="mouseDown17()" onmouseup="mouseUp17()" style="margin-left: 348px; width: 17px;"></div>
+                    <div id="key18"class="key" onmousedown="mouseDown18()" onmouseup="mouseUp18()" style="margin-left: 368px; width: 17px;"></div>
+                    <div id="key19"class="key" onmousedown="mouseDown19()" onmouseup="mouseUp19()" style="margin-left: 388px; width: 20px;"></div>
+                    <div id="key20"class="key" onmousedown="mouseDown20()" onmouseup="mouseUp20()" style="margin-left: 410px; width: 20px;"></div>
+                    <div id="key21"class="key" onmousedown="mouseDown21()" onmouseup="mouseUp21()" style="margin-left: 435px; width: 17px;"></div>
+                    <div id="key22"class="key" onmousedown="mouseDown22()" onmouseup="mouseUp22()" style="margin-left: 455px; width: 17px;"></div>
+                    <div id="key23"class="key" onmousedown="mouseDown23()" onmouseup="mouseUp23()" style="margin-left: 475px; width: 20px;"></div>
+                    <div id="key24"class="key" onmousedown="mouseDown24()" onmouseup="mouseUp24()" style="margin-left: 500px; width: 17px;"></div>
+                    <div id="key25"class="key" onmousedown="mouseDown25()" onmouseup="mouseUp25()" style="margin-left: 520px; width: 17px;"></div>
+                    <div id="key26"class="key" onmousedown="mouseDown26()" onmouseup="mouseUp26()" style="margin-left: 540px; width: 20px;"></div>
+                    <div id="key27"class="key" onmousedown="mouseDown27()" onmouseup="mouseUp27()" style="margin-left: 566px; width: 17px;"></div>
+                    <div id="key28"class="key" onmousedown="mouseDown28()" onmouseup="mouseUp28()" style="margin-left: 586px; width: 17px;"></div>
+                    <div id="key29"class="key" onmousedown="mouseDown29()" onmouseup="mouseUp29()" style="margin-left: 605px; width: 20px;"></div>
+                    <div id="key30"class="key" onmousedown="mouseDown30()" onmouseup="mouseUp30()" style="margin-left: 630px; width: 20px;"></div>
+                    <div id="key31"class="key" onmousedown="mouseDown31()" onmouseup="mouseUp31()" style="margin-left: 655px; width: 17px;"></div>
+                    <div id="key32"class="key" onmousedown="mouseDown32()" onmouseup="mouseUp32()" style="margin-left: 675px; width: 17px;"></div>
+                    <div id="key33"class="key" onmousedown="mouseDown33()" onmouseup="mouseUp33()" style="margin-left: 695px; width: 20px;"></div>
+                    <div id="key34"class="key" onmousedown="mouseDown34()" onmouseup="mouseUp34()" style="margin-left: 720px; width: 17px;"></div>
+                    <div id="key35"class="key" onmousedown="mouseDown35()" onmouseup="mouseUp35()" style="margin-left: 740px; width: 17px;"></div>
+                    <div id="key36"class="key" onmousedown="mouseDown36()" onmouseup="mouseUp36()" style="margin-left: 760px; width: 20px;"></div>
+                    <div id="key37"class="key" onmousedown="mouseDown37()" onmouseup="mouseUp37()" style="margin-left: 785px; width: 17px;"></div>
+                    <div id="key38"class="key" onmousedown="mouseDown38()" onmouseup="mouseUp38()" style="margin-left: 805px; width: 17px;"></div>
+                    <div id="key39"class="key" onmousedown="mouseDown39()" onmouseup="mouseUp39()" style="margin-left: 825px; width: 20px;"></div>
+                    <div id="key40"class="key" onmousedown="mouseDown40()" onmouseup="mouseUp40()" style="margin-left: 850px; width: 17px;"></div>
+                    <div id="key41"class="key" onmousedown="mouseDown41()" onmouseup="mouseUp41()" style="margin-left: 870px; width: 17px;"></div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+            </div>
+        </div>
+        </div>
+        
+        <script>
+            function mouseDown1() { 
+                document.getElementById("key1").style.backgroundImage = "url(keys/1.png)";
+                var du = new Audio('sounds/re/c1.mp3');
+                du.play();
+            }
+            function mouseDown2() {
+              document.getElementById("key2").style.backgroundImage = "url(keys/2.png)";
+               var du = new Audio('sounds/re/d1.mp3');
+                du.play();
+            }
+            function mouseDown3() {
+              document.getElementById("key3").style.backgroundImage = "url(keys/3.png)";
+                 var du = new Audio('sounds/re/f1.mp3');
+                du.play();
+            }
+            function mouseDown4() {
+              document.getElementById("key4").style.backgroundImage = "url(keys/4.png)";
+                 var du = new Audio('sounds/re/g1.mp3');
+                du.play();
+            }
+            function mouseDown5() {
+              document.getElementById("key5").style.backgroundImage = "url(keys/5.png)";
+                 var du = new Audio('sounds/re/a1.mp3');
+                du.play();
+            }
+            function mouseDown6() {
+              document.getElementById("key6").style.backgroundImage = "url(keys/6.png)";
+                 var du = new Audio('sounds/re/b1.mp3');
+                du.play();
+            }
+            function mouseDown7() {
+              document.getElementById("key7").style.backgroundImage = "url(keys/7.png)";
+                var du = new Audio('sounds/re/c2.mp3');
+                du.play();
+            }
+            function mouseDown8() {
+              document.getElementById("key8").style.backgroundImage = "url(keys/8.png)";
+                var du = new Audio('sounds/re/d2.mp3');
+                du.play();
+            }
+            function mouseDown9() {
+              document.getElementById("key9").style.backgroundImage = "url(keys/9.png)";
+                var du = new Audio('sounds/re/e2.mp3');
+                du.play();
+            }
+            function mouseDown10() {
+              document.getElementById("key10").style.backgroundImage = "url(keys/10.png)";
+                var du = new Audio('sounds/re/f2.mp3');
+                du.play();
+            }
+            function mouseDown11() {
+              document.getElementById("key11").style.backgroundImage = "url(keys/11.png)";
+                var du = new Audio('sounds/re/g2.mp3');
+                du.play();
+            }
+            function mouseDown12() {
+              document.getElementById("key12").style.backgroundImage = "url(keys/12.png)";
+                var du = new Audio('sounds/re/a2.mp3');
+                du.play();
+            }
+            function mouseDown13() {
+              document.getElementById("key13").style.backgroundImage = "url(keys/13.png)";
+                var du = new Audio('sounds/re/b2.mp3');
+                du.play();
+            }
+            function mouseDown14() {
+              document.getElementById("key14").style.backgroundImage = "url(keys/14.png)";
+                var du = new Audio('sounds/re/c3.mp3');
+                du.play();
+            }
+            function mouseDown15() {
+              document.getElementById("key15").style.backgroundImage = "url(keys/15.png)";
+                var du = new Audio('sounds/re/d3.mp3');
+                du.play();
+            }
+            function mouseDown16() {
+              document.getElementById("key16").style.backgroundImage = "url(keys/16.png)";
+                var du = new Audio('sounds/re/e3.mp3');
+                du.play();
+            }
+            function mouseDown17() {
+              document.getElementById("key17").style.backgroundImage = "url(keys/17.png)";
+                var du = new Audio('sounds/re/g3.mp3');
+                du.play();
+            }
+            function mouseDown18() {
+              document.getElementById("key18").style.backgroundImage = "url(keys/18.png)";
+                var du = new Audio('sounds/re/g3.mp3');
+                du.play();
+            }
+            function mouseDown19() {
+              document.getElementById("key19").style.backgroundImage = "url(keys/19.png)";
+                var du = new Audio('sounds/re/a3.mp3');
+                du.play();
+            }
+            function mouseDown20() {
+              document.getElementById("key20").style.backgroundImage = "url(keys/20.png)";
+                var du = new Audio('sounds/re/b3.mp3');
+                du.play();
+            }
+            function mouseDown21() {
+              document.getElementById("key21").style.backgroundImage = "url(keys/21.png)";
+                var du = new Audio('sounds/re/c4.mp3');
+                du.play();
+            }
+            function mouseDown22() {
+              document.getElementById("key22").style.backgroundImage = "url(keys/22.png)";
+                var du = new Audio('sounds/re/c1.mp3');
+                du.play();
+            }
+            function mouseDown23() {
+              document.getElementById("key23").style.backgroundImage = "url(keys/23.png)";
+                var du = new Audio('sounds/re/d1.mp3');
+                du.play();
+            }
+            function mouseDown24() {
+              document.getElementById("key24").style.backgroundImage = "url(keys/24.png)";
+                var du = new Audio('sounds/re/e1.mp3');
+                du.play();
+            }
+            function mouseDown25() {
+              document.getElementById("key25").style.backgroundImage = "url(keys/25.png)";
+                var du = new Audio('sounds/re/f1.mp3');
+                du.play();
+            }
+            function mouseDown26() {
+              document.getElementById("key26").style.backgroundImage = "url(keys/26.png)";
+                var du = new Audio('sounds/re/g1.mp3');
+                du.play();
+            }
+            function mouseDown27() {
+              document.getElementById("key27").style.backgroundImage = "url(keys/27.png)";
+                var du = new Audio('sounds/re/a1.mp3');
+                du.play();
+            }
+            function mouseDown28() {
+              document.getElementById("key28").style.backgroundImage = "url(keys/28.png)";
+                var du = new Audio('sounds/re/b1.mp3');
+                du.play();
+            }
+            function mouseDown29() {
+              document.getElementById("key29").style.backgroundImage = "url(keys/29.png)";
+                var du = new Audio('sounds/re/c2.mp3');
+                du.play();
+            }
+            function mouseDown30() {
+              document.getElementById("key30").style.backgroundImage = "url(keys/30.png)";
+                var du = new Audio('sounds/re/d2.mp3');
+                du.play();
+            }
+            function mouseDown31() {
+              document.getElementById("key31").style.backgroundImage = "url(keys/31.png)";
+                var du = new Audio('sounds/re/e2.mp3');
+                du.play();
+            }
+            function mouseDown32() {
+              document.getElementById("key32").style.backgroundImage = "url(keys/32.png)";
+                var du = new Audio('sounds/re/f2.mp3');
+                du.play();
+            }
+            function mouseDown33() {
+              document.getElementById("key33").style.backgroundImage = "url(keys/33.png)";
+                var du = new Audio('sounds/re/g2.mp3');
+                du.play();
+            }
+            function mouseDown34() {
+              document.getElementById("key34").style.backgroundImage = "url(keys/34.png)";
+                var du = new Audio('sounds/re/a2.mp3');
+                du.play();
+            }
+            function mouseDown35() {
+              document.getElementById("key35").style.backgroundImage = "url(keys/35.png)";
+                var du = new Audio('sounds/re/b2.mp3');
+                du.play();
+            }
+            function mouseDown36() {
+              document.getElementById("key36").style.backgroundImage = "url(keys/36.png)";
+                var du = new Audio('sounds/re/c3.mp3');
+                du.play();
+            }
+            function mouseDown37() {
+              document.getElementById("key37").style.backgroundImage = "url(keys/37.png)";
+                var du = new Audio('sounds/re/d3.mp3');
+                du.play();
+            }
+            function mouseDown38() {
+              document.getElementById("key38").style.backgroundImage = "url(keys/38.png)";
+                var du = new Audio('sounds/re/e3.mp3');
+                du.play();
+            }
+            function mouseDown39() {
+              document.getElementById("key39").style.backgroundImage = "url(keys/39.png)";
+                var du = new Audio('sounds/re/g3.mp3');
+                du.play();
+            }
+            function mouseDown40() {
+              document.getElementById("key40").style.backgroundImage = "url(keys/40.png)";
+                var du = new Audio('sounds/re/g3.mp3');
+                du.play();
+            }
+            function mouseDown41() {
+              document.getElementById("key41").style.backgroundImage = "url(keys/41.png)";
+                var du = new Audio('sounds/re/a3.mp3');
+                du.play();
+            }
+
+            function mouseUp1() {
+              document.getElementById("key1").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp2() {
+              document.getElementById("key2").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp3() {
+              document.getElementById("key3").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp4() {
+              document.getElementById("key4").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp5() {
+              document.getElementById("key5").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp6() {
+              document.getElementById("key6").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp7() {
+              document.getElementById("key7").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp8() {
+              document.getElementById("key8").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp9() {
+              document.getElementById("key9").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp10() {
+              document.getElementById("key10").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp11() {
+              document.getElementById("key11").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp12() {
+              document.getElementById("key12").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp13() {
+              document.getElementById("key13").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp14() {
+              document.getElementById("key14").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp15() {
+              document.getElementById("key15").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp16() {
+              document.getElementById("key16").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp17() {
+              document.getElementById("key17").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp18() {
+              document.getElementById("key18").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp19() {
+              document.getElementById("key19").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp20() {
+              document.getElementById("key20").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp21() {
+              document.getElementById("key21").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp22() {
+              document.getElementById("key22").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp23() {
+              document.getElementById("key23").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp24() {
+              document.getElementById("key24").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp25() {
+              document.getElementById("key25").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp26() {
+              document.getElementById("key26").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp27() {
+              document.getElementById("key27").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp28() {
+              document.getElementById("key28").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp29() {
+              document.getElementById("key29").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp30() {
+              document.getElementById("key30").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp31() {
+              document.getElementById("key31").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp32() {
+              document.getElementById("key32").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp33() {
+              document.getElementById("key33").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp34() {
+              document.getElementById("key34").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp35() {
+              document.getElementById("key35").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp36() {
+              document.getElementById("key36").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp37() {
+              document.getElementById("key37").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp38() {
+              document.getElementById("key38").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp39() {
+              document.getElementById("key39").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp40() {
+              document.getElementById("key40").style.backgroundImage = 'url(keys/)';
+            }
+            function mouseUp41() {
+              document.getElementById("key41").style.backgroundImage = 'url(keys/)';
+            }
+        </script> 
+    </body>
+    </html>
